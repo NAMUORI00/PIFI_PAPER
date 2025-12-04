@@ -1,0 +1,24 @@
+\section{Methodology}
+\label{sec:methodology}
+This section describes the proposed methodology in detail. Our framework consists of three main components: data preprocessing, feature extraction, and model training.
+
+\subsection{System Architecture}
+Figure \ref{fig:system_overview} illustrates the overall architecture of our system. The input data is first processed to remove noise and normalize the values.
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=3.0in]{fig1.png} % Using an existing figure as placeholder
+\caption{Overview of the proposed system architecture.}
+\label{fig:system_overview}
+\end{figure}
+
+\subsection{Algorithm Description}
+We employ a modified transformer model. The core equation of our attention mechanism is defined as:
+\begin{equation}
+    Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V
+    \label{eq:attention}
+\end{equation}
+where $Q$, $K$, and $V$ represent the query, key, and value matrices, respectively.
+
+\subsection{Optimization}
+To train the model, we use the Adam optimizer with a learning rate of $0.001$. The loss function is defined as the cross-entropy between the predicted and actual labels.

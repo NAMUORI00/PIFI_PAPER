@@ -9,7 +9,17 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \graphicspath{{figures/}}
+\usepackage{silence}
+\WarningFilter{latexfont}{Font shape `LUC/nanummj/n/n' undefined}
+\WarningFilter{latexfont}{Font shape `LUC/nanummj/b/n' undefined}
+\WarningFilter{latexfont}{Some font shapes were not available, defaults substituted.}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@maketitle}{\begin{minipage}{\titlewidth}}{\begin{minipage}{\titlewidth}\hfuzz=1000pt}{}{}
+\makeatother
 \usepackage{kotex}
+\usepackage{url}
+\DeclareFontShape{T1}{formata}{m}{sl}{<->ssub * formata/m/it}{}
 
 \usepackage{bm}
 \makeatletter
@@ -29,36 +39,21 @@
 
 %Your document starts from here ___________________________________________________
 \begin{document}
+\hfuzz=1000pt % Suppress Overfull \hbox warnings caused by the template logo/header
+\hbadness=10000 % Suppress Underfull \hbox warnings
 \history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
 \doi{10.1109/ACCESS.2024.0429000}
 
-\title{Preparation of Papers for IEEE ACCESS}
-\author{\uppercase{First A. Author}\authorrefmark{1}, \IEEEmembership{Fellow, IEEE},
-\uppercase{Second B. Author}\authorrefmark{2}, and Third C. Author,
-Jr.\authorrefmark{3},
-\IEEEmembership{Member, IEEE}}
-
-\address[1]{National Institute of Standards and
-Technology, Boulder, CO 80305 USA (e-mail: author@boulder.nist.gov)}
-\address[2]{Department of Physics, Colorado State University, Fort Collins,
-CO 80523 USA (e-mail: author@lamar.colostate.edu)}
-\address[3]{Electrical Engineering Department, University of Colorado, Boulder, CO
-80309 USA}
-\tfootnote{This paragraph of the first footnote will contain support information, including sponsor and financial support acknowledgment. For example, ``This work was supported in part by the U.S. Department of Commerce under Grant BS123456.''}
-
-\markboth
-{Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
-{Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
-
-\corresp{Corresponding author: First A. Author (e-mail: author@ boulder.nist.gov).}
+\title{Research Paper Title}
+\input{sections/00_authors}
 
 
 \begin{abstract}
-This document is a template for LaTeX. If you are reading a paper or PDF version of this document, please download the LaTeX template or the MS Word template of your preferred publication from the IEEE Website at https://template-selector.ieee.org/secure/templateSelector/publicationType so you can use it to prepare your manuscript.
+This document is a template for LaTeX. If you are reading a paper or PDF version of this document, please download the LaTeX template or the MS Word template of your preferred publication from the IEEE Website at \url{https://template-selector.ieee.org/secure/templateSelector/publicationType} so you can use it to prepare your manuscript.
 \end{abstract}
 
 \begin{keywords}
-IEEE, IEEE Access, Paper, Template, Transaction.
+IEEE, IEEE Access, Paper, Template.
 \end{keywords}
 
 \titlepgskip=-21pt
@@ -66,14 +61,10 @@ IEEE, IEEE Access, Paper, Template, Transaction.
 \maketitle
 
 \input{sections/01_introduction}
-\input{sections/02_units}
-\input{sections/03_mistakes}
-\input{sections/04_guidelines}
+\input{sections/02_related_work}
+\input{sections/03_methodology}
+\input{sections/04_experiments}
 \input{sections/05_conclusion}
-\input{sections/06_appendices}
-\input{sections/07_submission}
-\input{sections/08_policy}
-\input{sections/09_principles}
 \input{sections/10_references}
 \input{sections/11_biography}
 

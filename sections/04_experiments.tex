@@ -1,0 +1,27 @@
+\section{Experiments}
+\label{sec:experiments}
+We conducted extensive experiments to evaluate the performance of our proposed method.
+
+\subsection{Experimental Setup}
+We used the XYZ dataset, which contains 10,000 samples. The dataset was split into training (80\%), validation (10\%), and testing (10\%) sets. All experiments were implemented using PyTorch on an NVIDIA RTX 3090 GPU.
+
+\subsection{Results}
+Table \ref{tab:performance} shows the comparison of our method with state-of-the-art approaches. Our method achieves a higher accuracy while maintaining a lower inference time.
+
+\begin{table}[h]
+\caption{Performance Comparison}
+\label{tab:performance}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Method & Accuracy (\%) & Inference Time (ms) \\
+\hline
+Method A & 85.2 & 12 \\
+Method B & 88.5 & 15 \\
+\textbf{Proposed} & \textbf{92.1} & \textbf{10} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Ablation Study}
+We also performed an ablation study to analyze the contribution of each component. The results confirm that the attention mechanism plays a crucial role in improving performance.
