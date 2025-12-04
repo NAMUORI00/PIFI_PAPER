@@ -1,0 +1,52 @@
+\section{Introduction}
+\label{sec:introduction}
+\PARstart{이}{문서는} \LaTeX\ 템플릿입니다. 이 문서의 논문 또는 PDF 버전을 읽고 있다면, IEEE 웹사이트의 \underline
+{https://template-selector.ieee.org/secure/templateSelec}\break\underline{tor/publicationType}에서 원하는 출판물의 LaTeX 템플릿 또는 MS Word 템플릿을 다운로드하여 원고를 준비하는 데 사용하십시오.
+LaTeX 사용을 선호하는 경우, 동일한 웹 페이지에서 IEEE의 LaTeX 스타일 및 샘플 파일을 다운로드하십시오. 또한 다음 링크에서 Overleaf 편집기 사용을 살펴볼 수도 있습니다:
+\underline
+{https://www.overleaf.com/blog/278-how-to-use-overleaf-}\break\underline{with-ieee-collabratec-your-quick-guide-to-getting-started}\break\underline{\#.xsVp6tpPkrKM9}
+
+IEEE는 논문의 최종 서식을 지정합니다. 컨퍼런스용 논문인 경우 컨퍼런스 페이지 제한을 준수하십시오.
+
+\subsection{Abbreviations and Acronyms}
+약어와 두문자어는 초록에서 이미 정의되었더라도 본문에서 처음 사용할 때 정의하십시오. IEEE, SI, ac, dc와 같은 약어는 정의할 필요가 없습니다. 마침표가 포함된 약어에는 공백을 두지 마십시오: "C. N. R. S."가 아니라 "C.N.R.S."라고 씁니다. 제목에는 불가피한 경우(예: 이 기사의 제목에 있는 "IEEE")를 제외하고는 약어를 사용하지 마십시오.
+
+\subsection{Other Recommendations}
+마침표와 콜론 뒤에는 한 칸을 띄웁니다. 복합 수식어는 하이픈으로 연결합니다: "zero-field-cooled magnetization." 현수 분사 구문을 피하십시오. 예를 들어, ``Using \eqref{eq}, the potential was calculated.'' [누가 또는 무엇이 \eqref{eq}를 사용했는지 명확하지 않습니다.] 대신 ``The potential was calculated by using \eqref{eq},'' 또는 ``Using \eqref{eq}, we calculated the potential.''라고 쓰십시오.
+
+소수점 앞에는 0을 사용합니다: ``.25''가 아니라 ``0.25''입니다. ``cc'' 대신 ``cm$^{3}$''를 사용합니다. 샘플 치수는 ``0.1 $\times $ 0.2 cm$^{2}$''가 아니라 ``0.1 cm $\times $ 0.2 cm''로 표시합니다. ``seconds''의 약어는 ``sec''가 아니라 ``s''입니다. ``webers/m$^{2}$'' 대신 ``Wb/m$^{2}$'' 또는 ``webers per square meter''를 사용합니다. 값의 범위를 나타낼 때는 ``7$\sim $9''가 아니라 ``7 to 9'' 또는 ``7--9''라고 씁니다.
+
+문장 끝의 괄호 문구는 닫는 괄호 밖에 마침표를 찍습니다(이것처럼). (괄호 문장은 괄호 안에 마침표를 찍습니다.) 미국 영어에서는 마침표와 쉼표가 따옴표 안에 위치합니다, ``this period.''처럼요. 다른 구두점은 ``outside''에 위치합니다! 축약형을 피하십시오; 예를 들어 ``don't'' 대신 ``do not''을 쓰십시오. 직렬 쉼표가 선호됩니다: ``A, B and C'' 대신 ``A, B, and C''를 사용하십시오.
+
+원한다면 1인칭 단수 또는 복수를 사용하고 능동태를 사용할 수 있습니다(``It was observed that $\ldots$'' 대신 ``I observed that $\ldots$'' 또는 ``We observed that $\ldots$''). 철자를 확인하는 것을 잊지 마십시오. 모국어가 영어가 아닌 경우, 영어를 모국어로 하는 동료에게 논문을 꼼꼼히 교정받으십시오.
+
+한 기사 내에서 너무 많은 글꼴을 사용하지 않도록 하십시오. 또한 MathJax는 정말 이상한 글꼴은 처리할 수 없다는 점을 기억하십시오.
+
+\subsection{Equations}
+방정식 번호는 \eqref{eq}와 같이 오른쪽 여백에 맞춰 괄호 안에 연속적으로 매깁니다. 방정식을 더 간결하게 만들기 위해 solidus (~/~), exp 함수 또는 적절한 지수를 사용할 수 있습니다. 분모의 모호성을 피하기 위해 괄호를 사용하십시오. 방정식이 문장의 일부일 때는 다음과 같이 구두점을 찍습니다.
+\begin{equation}E=mc^2.\label{eq}\end{equation}
+
+다음 2개의 방정식은 LaTeX 컴파일러의 수식 출력을 테스트하는 데 사용됩니다. 방정식 (2)는 LaTeX 컴파일러의 출력입니다. 방정식 (3)은 (2)가 어떻게 보여야 하는지에 대한 이미지입니다.
+방정식 (2)가 기호 및 문자의 글꼴 스타일(예: 이탤릭체/로만체) 측면에서 (3)과 일치하는지 확인하십시오.
+
+\begin{align*} \frac{47i+89jk\times 10rym \pm 2npz }{(6XYZ\pi Ku) Aoq \sum _{i=1}^{r} Q(t)} {\int\limits_0^\infty \! f(g)\mathrm{d}x}  \sqrt[3]{\frac{abcdelqh^2}{ (svw) \cos^3\theta }} . \tag{2}\end{align*}
+
+$\hskip-7pt$\includegraphics[scale=0.52]{equation3.png}
+
+방정식에 사용된 기호가 방정식이 나오기 전이나 바로 뒤에 정의되었는지 확인하십시오. 기호는 이탤릭체로 표기합니다($T$는 온도를 의미할 수 있지만, T는 단위 테슬라입니다). 문장의 시작 부분이 아니라면 ``Eq. \eqref{eq}''나 ``equation \eqref{eq}'' 대신 ``\eqref{eq}''를 참조하십시오: ``Equation \eqref{eq} is $\ldots$ .''
+
+\subsection{LaTeX-Specific Advice}
+
+``하드'' 참조(예: \verb|(1)|) 대신 ``소프트'' 참조(예: \verb|\eqref{Eq}|)를 사용하십시오. 이렇게 하면 파일을 한 줄씩 훑어보지 않고도 섹션을 결합하거나, 방정식을 추가하거나, 그림이나 인용의 순서를 변경할 수 있습니다.
+
+\verb|{eqnarray}| 방정식 환경을 사용하지 마십시오. 대신 \verb|{align}| 또는 \verb|{IEEEeqnarray}|를 사용하십시오. \verb|{eqnarray}| 환경은 관계 기호 주위에 보기 흉한 공백을 남깁니다.
+
+{\LaTeX}의 \verb|{subequations}| 환경은 표시된 방정식 번호가 없더라도 메인 방정식 카운터를 증가시킨다는 점에 유의하십시오. 이를 잊어버리면 방정식 번호가 (17)에서 (20)으로 건너뛰는 기사를 작성하게 되어, 편집자가 새로운 계산법을 발견했는지 궁금해할 수 있습니다.
+
+{\BibTeX}은 마법처럼 작동하지 않습니다. 허공에서 서지 데이터를 가져오는 것이 아니라 .bib 파일에서 가져옵니다. {\BibTeX}을 사용하여 참고문헌을 생성하는 경우 .bib 파일을 보내야 합니다.
+
+{\LaTeX}은 당신의 마음을 읽을 수 없습니다. subsubsection과 표에 동일한 라벨을 할당하면 표 I이 표 IV-B3으로 상호 참조되는 것을 발견할 수 있습니다.
+
+{\LaTeX}은 예지력이 없습니다. 카운터를 업데이트하는 명령 앞에 \verb|\label| 명령을 넣으면, 라벨은 대신 마지막으로 상호 참조된 카운터를 가져옵니다. 특히 \verb|\label| 명령은 그림이나 표의 캡션 앞에 오면 안 됩니다.
+
+\verb|{array}| 환경 내에서 \verb|\nonumber|를 사용하지 마십시오. \verb|{array}| 내부의 방정식 번호를 멈추지 않으며(어차피 없을 것입니다), 주변 방정식에서 원하는 방정식 번호를 멈추게 할 수 있습니다.
